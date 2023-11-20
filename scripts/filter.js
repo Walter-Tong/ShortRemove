@@ -1,12 +1,18 @@
 const filter = () => {
-    setTimeout(() => {
-        let elements = document.getElementsByTagName('ytd-rich-section-renderer');
+    let elements = document.getElementsByTagName('ytd-rich-section-renderer');
 
-        if (elements.length > 0) {
-            let firstElement = elements[0];
-            firstElement.remove();
-        }
-    }, 500)
+    if (elements.length > 0) {
+        let firstElement = elements[0];
+        firstElement.remove();
+    }
+    // setTimeout(() => {
+    //     let elements = document.getElementsByTagName('ytd-rich-section-renderer');
+
+    //     if (elements.length > 0) {
+    //         let firstElement = elements[0];
+    //         firstElement.remove();
+    //     }
+    // }, 500)
 }
 
 // Callback function to be executed when mutations are observed
